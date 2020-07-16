@@ -3,6 +3,7 @@ import { Route, Switch, Redirect, Link, withRouter } from 'react-router-dom';
 import Users from './Users';
 import Posts from './Posts';
 import Articles from './Articles';
+import Contact from './Contact';
 
 
 class Home extends Component {
@@ -25,6 +26,9 @@ class Home extends Component {
                             <li className="nav-item">
                                 <Link className={"nav-link"} to={"/articles"}> Articles </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className={"nav-link"} to={"/contact"}> Contact </Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -33,6 +37,7 @@ class Home extends Component {
                     <Route path="/users" component={Users} />
                     <Route path="/posts" component={Posts} />
                     <Route path="/articles" component={Articles} />
+                    <Route path="/contact" component={Contact} />
                 </Switch>
             </div>
         )
