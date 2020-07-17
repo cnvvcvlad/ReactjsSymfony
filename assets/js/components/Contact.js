@@ -6,32 +6,47 @@ class Contact extends Component {
     constructor() {
         super();
 
-        this.state = { posts: [], loading: true }
+        this.state = { value: '', loading: true };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount() {
-        this.getPosts();
+    handleChange(event) {
+        this.setState({ value: event.target.value, loading: false });
     }
 
-    getPosts() {
-        axios.get(`https://jsonplaceholder.typicode.com/posts/`).then(res => {
-            const posts = res.data.slice(0, 15);
-            this.setState({ posts, loading: false })
+    handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.value);
+        event.preventDefault();
+    }
+    // componentDidMount() {
+    //     this.sentContact();
+    // }
+
+
+    sentContact() {
+        axios.post('http://localhost:8000/valid', {
+            firstname: this.firstname
         })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
     render() {
         const loading = this.state.loading;
         return (
-            <div>
-                <section className="row-section">
-                    <div className="container">
-                        <div className="row">
-                            <h2 className="text-center"><span>Contactez-nous</span></h2>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <input type="submit" value="Submit" />
+            </form>
         )
     }
 }
