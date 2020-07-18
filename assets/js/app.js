@@ -17,6 +17,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import '../css/app.css';
+import $ from 'jquery';
+import 'bootstrap'; // adds functions to jQuery
 import Home from './components/Home';
 
 ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
