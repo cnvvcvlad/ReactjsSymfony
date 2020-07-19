@@ -4,20 +4,20 @@
     ✔ Symfony CLI(command line interface) version : 4.16.5 @done(20-07-06 15:23)
     ✔ Define realpath_cache_size >= 5120 kilobytes @done(20-07-06 15:23)
 
-☐ Creating Symfony Application
+✔ Creating Symfony Application @done(20-07-19 10:04)
     ✔ Symfony 4.4 version @done(20-07-06 15:48)
-    ☐ Customize .env file (database) 
+    ✔ Customize .env file (database) @done(20-07-19 10:04)
     ✔ Create a Default Controller @done(20-07-09 17:05)
     ✔ Add get list users method @done(20-07-09 17:05)
     ✔ Use Postman to check the JSON format @done(20-07-09 17:06)
 
-☐ Building the Frontend App with React
+✔ Building the Frontend App with React @done(20-07-19 10:04)
     ✔ Install Webpack Encore @done(20-07-09 17:25)
     ✔ Install yarn @done(20-07-09 17:25)
     ✔ Use Yarn to install React, React-router, Axios and other dependencies. @done(20-07-09 17:25)
     ✔ Configured Webpack Encore @done(20-07-09 17:31)
 
-☐ Building React components
+✔ Building React components @done(20-07-19 10:04)
     ✔ Create a new folder within the assets/js directory and name its components @done(20-07-10 11:09)
         ✔ Home.js: This component will be the homepage for the application and be used to display the contents from the public route to users. @done(20-07-10 11:09)
         ✔ Posts.js: This component will handle the fetching of contents from the JSONPlaceholder public API @done(20-07-10 11:09)
@@ -32,7 +32,7 @@
 ✔ Create the PostsComponent by opening the ./assets/js/components/Posts.js @done(20-07-10 11:10)
 ✔ Create the UsersComponent by opening the ./assets/js/components/Users.js @done(20-07-10 11:10)
 
-☐ Update the Base Template in to templates/base.html.twig
+✔ Update the Base Template in to templates/base.html.twig @done(20-07-19 10:04)
     ✔ Build the assets, run:  yarn encore dev @done(20-07-19 09:57)
         ✔ Create new file public/build/app.js (holds all the JavaScript for your “app” entry) @done(20-07-19 09:57)
         ✔ Create new file public/build/app.css (holds all the CSS for your “app” entry) @done(20-07-19 09:57)
