@@ -22,6 +22,8 @@
         ✔ Home.js: This component will be the homepage for the application and be used to display the contents from the public route to users. @done(20-07-10 11:09)
         ✔ Posts.js: This component will handle the fetching of contents from the JSONPlaceholder public API @done(20-07-10 11:09)
         ✔ Users.js: This component will be used to fetch and display the users’ list from the backend API created within our Symfony project @done(20-07-10 11:09)
+        ✔ Articles.js : This component will be used to display articles list from database @done(20-07-19 09:59)
+        ✔ Contact.js : This component wil be used to send contact form in JSON format @done(20-07-19 10:00)
 
 ✔ Update the AppComponent ( located in the ./assets/js/app.js) @done(20-07-10 11:09)
 ✔ Add a stylesheet (add some styles within ./assets/css/app.css) @done(20-07-10 11:09)
@@ -31,7 +33,7 @@
 ✔ Create the UsersComponent by opening the ./assets/js/components/Users.js @done(20-07-10 11:10)
 
 ☐ Update the Base Template in to templates/base.html.twig
-    ☐ Build the assets, run:  yarn encore dev
-        ☐ Create new file public/build/app.js (holds all the JavaScript for your “app” entry)
-        ☐ Create new file public/build/app.css (holds all the CSS for your “app” entry)
-        ☐ Create new file public/build/runtime.js (a file that helps Webpack do its job)
+    ✔ Build the assets, run:  yarn encore dev @done(20-07-19 09:57)
+        ✔ Create new file public/build/app.js (holds all the JavaScript for your “app” entry) @done(20-07-19 09:57)
+        ✔ Create new file public/build/app.css (holds all the CSS for your “app” entry) @done(20-07-19 09:57)
+        ✔ Create new file public/build/runtime.js (a file that helps Webpack do its job) @done(20-07-19 09:58)
