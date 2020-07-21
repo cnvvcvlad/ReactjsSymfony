@@ -40,13 +40,25 @@ class Contact extends Component {
     render() {
         const loading = this.state.loading;
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+            <div className="container">
+                <form onSubmit={this.handleSubmit}>
+                    <h3 className="text-center">Contactez-nous!</h3>
+                    <div className="form-group">
+                        <label htmlFor="contactName">Name : </label>
+                        <input className="form-control" type="text" value={this.state.value} onChange={this.handleChange} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contactSubject">Sujet : </label>
+                        <input className="form-control" type="text" id="contactSubject" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="contactMessage">Message : </label>
+                        <textarea className="form-control"></textarea>
+                    </div>
+                    <input className="btn btn-primary mb-2" type="submit" value="Envoyer" />
+                </form>
+            </div>
+
         )
     }
 }
