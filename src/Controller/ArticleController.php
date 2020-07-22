@@ -11,16 +11,6 @@ use Symfony\Component\HttpFoundation\Response;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/article", name="article")
-     */
-    public function index()
-    {
-        return $this->render('article/index.html.twig', [
-            'controller_name' => 'ArticleController',
-        ]);
-    }
-
-    /**
      * @Route("/api/articles", name="articles")
      * @return \Symfony\Component\HttpFoundation\JsonResponse
      */
