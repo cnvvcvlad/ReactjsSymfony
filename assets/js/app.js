@@ -18,5 +18,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import '../css/app.css';
 import Home from './components/Home';
+import Footer from './footer/Footer';
 
-ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
+ReactDOM.render(<Router><Home /><Footer /></Router >, document.getElementById('root'));
