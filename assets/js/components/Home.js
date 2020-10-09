@@ -33,9 +33,9 @@ class Home extends Component {
                     </div>
                 </nav>
                 <Switch>
-                    <Redirect exact from="/" to="/users" />
-                    <Route path="/users" component={Users} />
+                    <Redirect exact from="/" to="/posts" />
                     <Route path="/posts" component={Posts} />
+                    <Route path="/users" component={Users} />
                     <Route path="/articles" component={Articles} />
                     <Route path="/contact" component={Contact} />
                 </Switch>

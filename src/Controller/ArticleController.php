@@ -19,6 +19,7 @@ class ArticleController extends AbstractController
         $articles = $this->getDoctrine()->getRepository(Article::class)->findAll();
 
         //serialisation(normalisation + encodage)
-        return $this->json($articles, 200, ['Access-Control-Allow-Origin :*'], ['groups' => 'post:read']);
+        return $this->json($articles, 200, ['Access-Control-Allow-Origin'=>'https://127.0.0.1:8000
+'], ['groups' => 'post:read']);
     }
 }
