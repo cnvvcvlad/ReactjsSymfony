@@ -28,5 +28,10 @@ services:
         resource: '../src/DataFixtures'
         tags: [doctrine.fixture.orm]
 
+    
+    App\EventListener\:
+        resource: '../src/EventListener'        
+        tags: ['kernel.event_subscriber']
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
