@@ -2,7 +2,7 @@
     "devDependencies": {
         "@babel/preset-react": "^7.10.4",
         "@symfony/webpack-encore": "^0.33.0",
-        "axios": "^0.20.0-0",
+        "axios": "^0.21.1",
         "core-js": "^3.0.0",
         "node-sass": "^4.14.1",
         "prop-types": "^15.7.2",
