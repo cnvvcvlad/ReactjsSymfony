@@ -25,12 +25,12 @@
         "@babel/plugin-transform-runtime": "^7.10.4",
         "elliptic": "6.5.4",
         "ini": "^2.0.0",
-        "is-svg": "^4.2.2",
+        "is-svg": "4.2.2",
         "node-forge": "^0.10.0",
         "node-notifier": "^9.0.0",
         "object-path": "^0.11.5",
         "react-router-dom": "^5.2.0",
-        "ssri": "^8.0.1",
-        "y18n": "^4.0.1"
+        "ssri": "8.0.1",
+        "y18n": "4.0.1"
     }
 }
